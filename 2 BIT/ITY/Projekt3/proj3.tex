@@ -1,0 +1,273 @@
+%Vytvoril: Filip Gulán
+%xgulan00
+%2014
+
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[left=2cm, top=3cm, text={17cm,24cm}]{geometry}
+\usepackage[czech]{babel}
+\usepackage[latin2]{inputenc}
+%\usepackage[IL2]{fontenc}
+\usepackage{times}
+\usepackage{multirow}
+\usepackage[ruled,czech,linesnumbered,longend,noline]{algorithm2e}
+\usepackage{algorithmic}
+\usepackage{picture}
+\usepackage{graphics}
+%\usepackage{epstopdf}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\textsc{\Huge Vysoké uèení technické v Brnì\\ \medskip
+\huge Fakulta informaèních technologií}\\
+\vspace{\stretch{0.382}}
+\LARGE Typografie a publikování\,--\,3. projekt\\
+\Huge Tabulky a obrázky\\
+\vspace{\stretch{0.618}}
+\Large \today \hfill         Filip Gulán \newpage
+\end{center}
+\end{titlepage}
+\newpage
+\section{Úvodní strana}
+Název práce umístìte do zlatého øezu a~nezapomeòte uvést dne¹ní datum a~va¹e jméno a~pøíjmení.
+
+\section{Tabulky}
+Pro sázení tabulek mù¾eme pou¾ít buï prostøedí\texttt{ tabbing }nebo prostøedí\texttt{ tabular}.
+
+\subsection{Prostøedí\texttt{ tabbing}}
+Pøi pou¾ití\texttt{ tabbing }vypadá tabulka následovnì:
+
+%%%%%%%%%%%%%%%%%%%%%%%%Ovocnatabula%%%%%%%%%%%%%%%%
+\begin{tabbing}
+\verb|\pushtabs| \qquad \= \textbf{Cena} \quad\= \kill
+\textbf{Ovoce} \> \textbf{Cena} \> \textbf{Mno¾ství} \\
+Jablka\> 25,90\> 3 kg\\
+Hru¹ky\> 27,40\> 2,5 kg\\
+Vodní melouny\> 35,-- \> 1 kus\\
+\end{tabbing}
+
+\noindent Toto prostøedí se dá také pou¾ít pro sázení algoritmù, ov¹em vhodnìj¹í je pou¾ít
+prostøedí\texttt{ algorithm }nebo \texttt{ algorithm2e } (viz sekce \ref{algoritmus}).
+
+\subsection{Prostøedí\texttt{ tabular}}
+Dal¹í mo¾ností, jak vytvoøit tabulku, je pou¾ít prostøedí\texttt{ tabular}. Tabulky pak budou
+vypadat takto\footnote{Kdyby byl problém s\texttt{ cline, }zkuste se podívat tøeba sem:
+http://www.abclinuxu.cz/tex/poradna/show/325037.}:
+\bigskip
+\begin{table}[h] 
+\begin{center}
+\catcode`\-=12 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%Cenovatabulka%%%%%%%%%%%%%%%%%
+\begin{tabular}{|l|r|r|} 
+\hline
+& \multicolumn{2}{|c|}{\textbf{Cena}}\\ \cline{2-3}
+\textbf{Mìna} & \textbf{nákup} & \textbf{prodej}\\ \hline
+EUR & 27,34 & 27,42\\
+GBP & 33,09 & 33,21\\
+USD & 19,87 & 19,95\\
+\hline
+\end{tabular}
+\caption{Tabulka kurzù k~dne¹nímu dni}
+\label{Kurz}
+\end{center}
+\end{table}
+
+\begin{table}[h] 
+\begin{center}
+\catcode`\-=12 
+%%%%%%%%%%%%%%%%%%%PrvaTabulka%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{|c|c|} 
+\hline
+$A$ & $\neg A$\\ \hline
+$\textbf{P}$ & $\textbf{N}$\\ \hline
+$\textbf{O}$ & $\textbf{O}$\\ \hline
+$\textbf{X}$ & $\textbf{X}$\\ \hline
+$\textbf{N}$ & $\textbf{P}$\\
+\hline
+\end{tabular}
+%%%%%%%%%%%%%%%%%%%%%%%DruhaTabulka$$$$$$$$$$$$$$$$$$$
+\begin{tabular}{|c|c|c|c|c|c|} \hline
+\multicolumn{2}{|l|}{\multirow{2}{*}{A $\wedge$ B}} & \multicolumn{4}{c|}{$B$}  \\ \cline{3-6} 
+\multicolumn{2}{|c|}{} & \textbf{P} & \textbf{O} & \textbf{X} & \textbf{N} \\ \hline
+\multirow{4}{*}{A} & \textbf{P} & P & O & X & N \\ \cline{2-6} 
+ & \textbf{O} & O & O & N & N \\ \cline{2-6}  
+ & \textbf{X} & X & N & X & N \\ \cline{2-6} 
+ & \textbf{N} & N & N & N & N \\ \hline 
+\end{tabular}
+%%%%%%%%%%%%%%%%%%%%%%%%%Tretiatabulka%%%%%%%%%%%%%%
+\begin{tabular}{|c|c|c|c|c|c|} \hline
+\multicolumn{2}{|l|}{\multirow{2}{*}{A $\vee$ B}} & \multicolumn{4}{c|}{$B$}  \\ \cline{3-6} 
+\multicolumn{2}{|c|}{} & \textbf{P} & \textbf{O} & \textbf{X} & \textbf{N} \\ \hline
+\multirow{4}{*}{A} & \textbf{P} & P & P & P & P \\ \cline{2-6} 
+ & \textbf{O} & P & O & P & O \\ \cline{2-6}  
+ & \textbf{X} & P & P & X & X \\ \cline{2-6} 
+ & \textbf{N} & P & O & X & N \\ \hline 
+\end{tabular}
+%%%%%%%%%%%%%%%%%%%%%%%%%%StvrtaTabulka%%%%%%%%%%%%%%
+\begin{tabular}{|c|c|c|c|c|c|} \hline
+\multicolumn{2}{|l|}{\multirow{2}{*}{A $\rightarrow$ B}} & \multicolumn{4}{c|}{$B$}  \\ \cline{3-6} 
+\multicolumn{2}{|c|}{} & \textbf{P} & \textbf{O} & \textbf{X} & \textbf{N} \\ \hline
+\multirow{4}{*}{A} & \textbf{P} & P & O & X & N \\ \cline{2-6} 
+ & \textbf{O} & P & O & P & O \\ \cline{2-6}  
+ & \textbf{X} & P & P & X & X \\ \cline{2-6} 
+ & \textbf{N} & P & P & P & P \\ \hline 
+\end{tabular}
+\caption{Proto¾e Kleeneho trojhodnotová logika u¾ je ''zastaralá'', uvádíme si zde pøíklad ètyøhodnotové
+logiky}
+\label{logika}
+\end{center}
+\end{table}
+
+\section{Algoritmy} \label{algoritmus}
+Pokud budeme chtít vysázet algoritmus, mù¾eme pou¾ít prostøedí\texttt{ algorithm\footnote{Pro nápovìdu, jak zacházet s prostøedím\texttt{ algorithm, }mù¾eme zkusit tuhle 
+stránku:\\http://ftp.cstug.cz/pub/tex/CTAN/macros/latex/contrib/algorithms/algorithms.pdf.} } 
+nebo\texttt{ algorithm2e\footnote{Pro\texttt{ algorithm2e }zase tuhle: http://ftp.cstug.cz/pub/tex/CTAN/macros/latex/contrib/algorithm2e/algorithm2e.pdf.}}.
+Pøíklad pou¾ití prostøedí\texttt{ algorithm2e }viz Algoritmus \ref{algoritmus-zdroj}. 
+\bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Algoritmus%%%%%%%%%%%%%%%%%%%
+\begin{algorithm}[h]
+\label{algoritmus-zdroj}
+\caption{\textsc{Fast}SLAM}
+\SetKwInput{Input}{Input }
+\SetKwInOut{Output}{Output }
+\SetInd{1em}{1em}
+\SetNlSkip{-1.20em}
+\SetNlSty{}{}{:}
+\Input{($X_{t-1}, u_t, z_t$)}
+\Output{$X_t$}
+\BlankLine
+\Indp \Indp
+$\overline{X_t} = X_t = 0$\\
+\For{$k = 1 \textnormal{ to } M$}
+{
+	$x^{[k]}_{t} = sample\_motion\_mode(u_t ,x^{[k]}_{t-1})$\\
+	$\omega^{[k]}_{t} = measurement\_model(z_t ,x^{[k]}_{t}, m_{t-1})$\\
+	$m^{[k]}_{t} = updated\_occupancy\_grid(z_t ,x^{[k]}_{t}, m_{t-1}^{[k]})$\\
+	$\overline{X_t} = \overline{X_t} + \langle x^{[m]}_{x}, \omega^{[m]}_{t} \rangle$\\
+}
+\For{$k = 1 \textnormal{ to } M$}
+{
+	$\textnormal{draw } i \textnormal{ with probability} \approx \omega^{[i]}_{t}$\\
+	$\textnormal{add } \langle x^{[k]}_{x}, m^{[k]}_{t} \rangle \textnormal{ to } X_t$\\
+}
+\Return{$X_t$}   
+\end{algorithm}
+
+\section{Obrázky}
+Do na¹ich èlánkù mù¾eme samozøejmì vkládat obrázky. Pokud je obrázkem fotografie, mù¾eme
+klidnì pou¾ít bitmapový soubor. Pokud by to ale mìlo být nìjaké schéma nebo nìco podobného,
+je dobrým zvykem takovýto obrázek vytvoøit vektorovì.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ObrazokEtiopan%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\center
+{
+\scalebox{0.4}
+{
+\includegraphics{etiopan.eps}\reflectbox{\includegraphics{etiopan.eps}}
+}
+}
+\caption{Malý etiopánek a jeho bratøícek}
+\label{etiopan}
+\end{figure}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%ObrazokVektor%%%%%%%%%%%%%%%%%%%%%
+Rozdíl mezi vektorovým\,\dots
+\begin{figure}[h]
+\center{\scalebox{0.4}{\includegraphics{oniisan.eps}}}
+\caption{Vektorový obrázek}
+\label{vektor}
+\end{figure}
+\bigskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ObrazokRastor%%%%%%%%%%%%%%%%
+\noindent \dots\,a~bitmapovým obrázkem
+\begin{figure}[h]
+\center{\scalebox{0.6}{\includegraphics{oniisan2.eps}}}
+\caption{Bitmapový obrázek}
+\label{rastor}
+\end{figure}
+\bigskip
+
+\noindent se projeví napøíklad pøi zvìt¹ení.
+
+Odkazy (nejen ty) na obrázky \ref{etiopan}, \ref{vektor} a \ref{rastor}, na
+tabulky \ref{Kurz} a~\ref{logika} a~také na algoritmus \ref{algoritmus-zdroj} jsou
+udìlány pomocí køí¾ových odkazù. Pak je ov¹em potøeba zdrojový soubor pøelo¾it dvakrát.
+
+Vektorové obrázky lze vytvoøit i~pøímo~v \LaTeX u, napøíklad pomocí
+prostøedí\texttt{ picture. } V¹echny rozmìry jsou uvádìny v~mm.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%Malba%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\setlength{\unitlength}{4pt}
+\begin{center}
+\begin{picture}(115, 158.5)(0,0) 
+%%%%%%%%%%%%%%%Kvotyvectoryvertikalne%%%%%%%%%%%%%%%%%%%
+\put(88,144){\vector(0,1){14.5}}\put(88,158.5){\vector(0,-1){14.5}}
+\put(88,134){\vector(0,1){10}}\put(88,144){\vector(0,-1){10}}
+\put(88,124){\vector(0,1){10}}\put(88,134){\vector(0,-1){10}}
+\put(88,110){\vector(0,1){14}}\put(88,124){\vector(0,-1){14}}
+\put(88,35){\vector(0,1){75}}\put(88,110){\vector(0,-1){75}}
+\put(88,20){\vector(0,1){15}}\put(88,35){\vector(0,-1){15}}
+\put(88,10){\vector(0,1){10}}\put(88,20){\vector(0,-1){10}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%Kvotyhorizontalne%%%%%%%%%%%%%
+\put(0,93){\vector(1,0){15}}\put(15,93){\vector(-1,0){15}} %lavookrajvector
+\put(30,137){\vector(1,0){55}}\put(85,137){\vector(-1,0){55}} %hlavickasirkaboxu
+\put(85,93){\vector(1,0){9}}\put(94,93){\vector(-1,0){9}}
+\put(94,93){\vector(1,0){15}}\put(109,93){\vector(-1,0){15}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%Data%%%%%%%%%%%%%%%%%%%%%%%%
+\put(100,57){\vector(3,2){12}} %spodnasipka
+\put(93,105){\vector(-1,-4){3}} %vrchnasipka
+\put(0.3,94.5){Mezera $=$ 15}
+\put(48,138.5){©íøka boxu $=$ 55}
+\put(94.5,153){Vý¹ka}
+\put(90,150){mezery $=$ 14,5}
+\put(93,140){Vý¹ka}
+\put(90,137){mezery $=$ 10}
+\put(96,86){\textbf{Okrajová}}
+\put(95.5,82.5){\textbf{poznámka}}
+\put(98.5,97){©íøka}
+\put(95.5,94.5){boxu $=$ 15}
+\put(94,130){Vý¹ka}
+\put(90,127){hlavicky $=$ 10}
+\put(93,119){Vý¹ka}
+\put(90,116){mezery $=$ 14}
+\put(91,106){Mezera $=$ 9}
+\put(91.5,67){Vý¹ka}
+\put(90,64){tìla $=$ 75}
+\put(98,54){Vý¹ka}
+\put(93,50.5){stránky $=$ 158,5}
+\put(93,29.5){Vý¹ka}
+\put(90,26.5){mezery $=$ 15}
+\put(91.5,16){Vý¹ka}
+\put(90,13){paty $=$ 10}
+\put(47,4.5){©íøka stránky $=$ 115}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%najhrubsie%%%%%%%%%%%%%%%%
+\linethickness{1pt}
+\put(94,80){\framebox(15,10)} %poznamka
+\put(0,0){\framebox(115, 158.5)} %cely ram
+\put(30,124){\framebox(55, 10){\textbf{Hlavièka}}} %hlava
+\put(30,35){\framebox(55,75){\textbf{Textové tìlo}}} %telo
+\put(30,10){\framebox(55,10){\textbf{Pata}}} %pata
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\linethickness{0.7pt}
+\put(112,0){\vector(0,1){158.5}}\put(112,158.5){\vector(0,-1){158.5}} %velkyhorizontalny vektor
+%%%%%%%%%%%%%%%%%Kvotyhorizontalne%%%%%%%%%%%%%
+\put(0,93){\vector(1,0){15}}\put(15,93){\vector(-1,0){15}} %lavookrajvector
+\put(30,137){\vector(1,0){55}}\put(85,137){\vector(-1,0){55}} %hlavickasirkaboxu
+\put(0,3){\vector(1,0){115}}\put(115,3){\vector(-1,0){115}} %uplnedolevector
+\put(85,93){\vector(1,0){9}}\put(94,93){\vector(-1,0){9}}
+\put(94,93){\vector(1,0){15}}\put(109,93){\vector(-1,0){15}}
+\multiput(15,158.5)(0,-10){16}{\line(0,-1){7}} %prerusovana 1
+\multiput(0,144)(10,0){11}{\line(1,0){7}} %prerusovana 2
+\end{picture}
+\end{center}
+\caption{Vektorový obrázek v prostøedí \texttt{picture}.}
+\end{figure}
+\end{document}
