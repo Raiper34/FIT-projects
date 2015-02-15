@@ -23,7 +23,7 @@ ITY Projekt 3 Sadzba tabuliek a obrázkov - 10/10
 ITY Projekt 4 Bibliografické citácie - 10/10  
 ITY Projekt 5 Tvorba prezentácií - 10/10  
 
-3 BIT - Druhý semester
+3 BIT - Tretí semester
 ----------------------
 IAL Domáca úloha 1 - 10/10  
 IAL Domáca úlha 2 - 10/10  
