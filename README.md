@@ -27,8 +27,19 @@ ITY Projekt 5 Tvorba prezentácií - 10/10
 ----------------------
 IAL Domáca úloha 1 - 10/10  
 IAL Domáca úlha 2 - 10/10  
-INP projekt 1 Ovládanie maticového displaya - 13/13  
+INP Projekt 1 Ovládanie maticového displaya - 13/13  
 INP Projekt 2 Jendnoduchý CPU Brainfuck interpreter - 19/20  
 ISS Projekt Zpracovanie obrazu - 12/12  
 IFJ Projekt https://github.com/Raiper34/IFJ2014-public  
 IPMA Semestrálny projekt - 20/20  
+
+4 BIT - Tretí semester
+----------------------
+IDS Projekt 1 časť Dátový model a model prípadov užitia - 4/5
+IDS Projekt 2,3,4,5 časť SQL skript - 24/24
+IPK Projekt 1 Client Server protokol - 15/15
+IPP Projekt 1 XML to DDL - 11/10
+IPP Projekt 2 Zvýrazňovanie syntaxe - 10/10
+IZG Projekt Vykreslenie priehľadných 3D modelov - 12/18
+IJA Projekt Hra Labyrint - 60/80
+ISJ Projekt Sťahovanie príspevkov z fóra a twitteru - 35/40
