@@ -33,7 +33,7 @@ ISS Projekt Zpracovanie obrazu - 12/12
 IFJ Projekt https://github.com/Raiper34/IFJ2014-public  
 IPMA Semestrálny projekt - 20/20  
 
-4 BIT - Tretí semester
+4 BIT - Štvrtý semester
 ----------------------
 IDS Projekt 1 časť Dátový model a model prípadov užitia - 4/5  
 IDS Projekt 2,3,4,5 časť SQL skript - 24/24  
