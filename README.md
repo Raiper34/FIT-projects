@@ -40,6 +40,6 @@ IDS Projekt 2,3,4,5 časť SQL skript - 24/24
 IPK Projekt 1 Client Server protokol - 15/15  
 IPP Projekt 1 XML to DDL - 11/10  
 IPP Projekt 2 Zvýrazňovanie syntaxe - 10/10  
-IZG Projekt Vykreslenie priehľadných 3D modelov - 12/18  
-IJA Projekt Hra Labyrint - 70/80  
-ISJ Projekt Sťahovanie príspevkov z fóra a twitteru - 35/40  
+IZG Projekt Vykreslenie priehľadných 3D modelov - 14/18  
+IJA Projekt Hra Labyrint - 76/80  
+ISJ Projekt Sťahovanie príspevkov z fóra a twitteru - 38/40  
