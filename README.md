@@ -42,4 +42,4 @@ IPP Projekt 1 XML to DDL - 11/10
 IPP Projekt 2 Zvýrazňovanie syntaxe - 10/10  
 IZG Projekt Vykreslenie priehľadných 3D modelov - 14/18  
 IJA Projekt Hra Labyrint - 76/80  
-ISJ Projekt Sťahovanie príspevkov z fóra a twitteru - 38/40  
+ISJ Projekt Sťahovanie príspevkov z fóra a twitteru https://github.com/Raiper34/ISJ-Project-Python-Scripts
