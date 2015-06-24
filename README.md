@@ -41,5 +41,5 @@ IPK Projekt 1 Client Server protokol - 15/15
 IPP Projekt 1 XML to DDL - 11/10  
 IPP Projekt 2 Zvýrazňovanie syntaxe - 10/10  
 IZG Projekt Vykreslenie priehľadných 3D modelov - 14/18  
-IJA Projekt Hra Labyrint - 76/80  
+IJA Projekt Hra Labyrint https://github.com/Raiper34/IJA-Labyrinth-game  
 ISJ Projekt Sťahovanie príspevkov z fóra a twitteru https://github.com/Raiper34/ISJ-Project-Python-Scripts
