@@ -43,3 +43,11 @@ IPP Projekt 2 Zvýrazňovanie syntaxe - 10/10
 IZG Projekt Vykreslenie priehľadných 3D modelov - 14/18  
 IJA Projekt Hra Labyrint https://github.com/Raiper34/IJA-Labyrinth-game  
 ISJ Projekt Sťahovanie príspevkov z fóra a twitteru https://github.com/Raiper34/ISJ-Project-Python-Scripts
+
+5 BIT - Piaty semester  
+---------------------
+IIS Informačný systém Zoologickej záhrady  
+IMP Simulácia v CW Svetelné hodiny  
+IMS Aplikácia celulárnych automatov v biológií  
+ISA Jednoduchý SNMP manager  
+ITU Hodiny  
