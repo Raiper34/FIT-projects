@@ -1,0 +1,31 @@
+Jednoduchy SNMP Manager
+=======================
+
+Autor: Filip Gulán (xgulan00)
+E-mail: xgulan00@stud.fit.vutbr.cz
+Dátum: 21.10.2015
+
+Popis programu:
+---------------
+Program slúži ako jednoduchý SNMP Manager pre vyčítanie parametrov rozhraní zo SNMP agenta. Program vyčítava z určeného agenta parametre objektu s OID 1.3.6.1.2.1.2 a to periodicky v určenom intervale a vypisuje ich na štandardný výstup. Program sa ukončuje korektne po obdržaní signálu SIGINT.
+
+Parametre: [-i interval] -c community_string AGENT
+-i, --interval: interval medzi jednotlivými vyčítaniami hodnôt v ms
+-c, --community_string:  community string pre prístup k parametrom na SNMP agentovi
+AGENT: doménové meno alebo IP adresa SNMP agenta
+
+Rozšírenie:
+-----------
+Súčasťou je aj vypracované rozšírenie, ktoré je implementované pri dekódovaní príchodzej správy vo funkcií dekodujGetResponse().
+
+Priklad spustenia:
+------------------
+./isaSnmpIfLog -i 500 -c public 127.0.0.1
+
+Zoznam odovzdaných súborov:
+---------------------------
+isaSnmpIfLog.cpp
+MakeFile
+manual.pdf
+Readme
+
