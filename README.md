@@ -46,8 +46,8 @@ ISJ Projekt Sťahovanie príspevkov z fóra a twitteru https://github.com/Raiper
 
 5 BIT - Piaty semester  
 ---------------------
-IIS Informačný systém Zoologickej záhrady - 30/30  
-IMP Simulácia v CW Svetelné hodiny 14/14  
-IMS Aplikácia celulárnych automatov v biológií 20/20  
-ISA Jednoduchý SNMP manager 17/15  
-ITU Hodiny 43/55  
+IIS Informačný systém Zoologickej záhrady https://github.com/Raiper34/IIS-ZOO   
+IMP Simulácia v CW Svetelné hodiny - 14/14  
+IMS Aplikácia celulárnych automatov v biológií https://github.com/Raiper34/IMS-Simulation    
+ISA Jednoduchý SNMP manager - 17/15  
+ITU Hodiny https://github.com/Raiper34/ITU-Clock  
