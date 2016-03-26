@@ -51,3 +51,10 @@ IMP Simulácia v CW Svetelné hodiny - 14/14
 IMS Aplikácia celulárnych automatov v biológií https://github.com/Raiper34/IMS-Simulation    
 ISA Jednoduchý SNMP manager - 17/15  
 ITU Hodiny https://github.com/Raiper34/ITU-Clock  
+
+6 BIT - Šiesty semester  
+---------------------
+ITW Projekt 1   
+ITW Projekt 2  
+IW5 Správa filmov  
+IBP 
