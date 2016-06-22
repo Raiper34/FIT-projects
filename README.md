@@ -54,7 +54,7 @@ ITU Hodiny https://github.com/Raiper34/ITU-Clock
 
 6 BIT - Šiesty semester  
 ---------------------
-ITW Projekt 1   
-ITW Projekt 2  
-IW5 Správa filmov  
-IBP 
+ITW Projekt 1 - 20/20   
+ITW Projekt 2 30/30  
+IW5 Správa filmov https://github.com/Raiper34/IW5-Movies  
+IBP https://github.com/Raiper34/Bakalarska-praca-text 
