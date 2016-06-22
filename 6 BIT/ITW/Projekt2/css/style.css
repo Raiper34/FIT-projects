@@ -1,0 +1,299 @@
+html, body
+{
+	font-family: 'Bree Serif', serif;
+	padding: 0px;
+	margin: 0px;
+	background-image: url('img/yellow.png');
+	background-color: #F0DF5B;
+	min-width: 550px;
+}
+
+
+/** Header **/
+header
+{
+	background-image: url('img/black.png');
+	background-color: #2E2E2E;
+	width: 100%;
+	color: white;
+	position: fixed;
+	z-index: 100;
+}
+
+header h1
+{
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+}
+
+header nav
+{
+	margin: 10px 10px 0px 0px;
+	float: right;
+}
+
+
+header nav, header nav ul
+{
+	display: inline-block;
+}
+
+header li
+{
+	display: inline-block;
+	position: relative;
+}
+
+header li a
+{
+	padding: 26px 20px 16px 20px;
+}
+
+header li a:hover
+{
+	background-image: url('img/white.png');
+	background-color: #E8E8E8;
+	color: black;
+}
+
+.dropdown-content 
+{
+	display: none;
+	margin-top: 15px;
+    position: absolute;
+    min-width: 130px;
+    background-image: url('img/black.png');
+	background-color: #2E2E2E;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+.dropdown-content a
+{
+	padding: 10px 10px 10px 10px;
+	display: block;
+}
+
+.dropdown:hover .dropdown-content a:hover
+{
+    background-image: url('img/white.png');
+	background-color: #E8E8E8;
+	color: black;
+}
+
+header a
+{
+	text-decoration: none;
+	color: white;
+}
+
+/** Image header **/
+#image-header
+{
+	max-width: 1240px;
+	margin: 0px auto;
+	padding-top: 60px;
+	margin-bottom: -5px;
+	position: relative;
+}
+
+#image-header img 
+{
+	width: 100%;
+}
+
+#logo
+{
+	width: 15% !important;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	padding: 15px;
+}
+
+/** Roloverbox **/
+#rollover-box
+{
+	border: 1px solid black;
+	padding: 0px;
+	background-image: url('img/yellow.png');
+	background-color: #F0DF5B;
+}
+
+#rollover-box h2
+{
+	background-image: url('img/black.png');
+	background-color: #2E2E2E;
+	color: white;
+	padding: 5px 10px 5px 10px;
+	margin: 0px;
+	cursor: pointer;
+}
+
+#rollover-box div 
+{
+	padding: 5px 10px 5px 10px;
+	overflow-y: scroll;
+}
+
+/** Home page **/
+.space
+{
+	margin: 0px 3% 0px 3%;
+	display: inline-block;
+}
+
+#feature
+{
+	text-align: center;
+	margin: 40px 0px 30px 0px;
+}
+
+.present
+{
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	padding: 0px 0px 15px 0px;
+}
+
+.present img
+{
+	border: 5px solid #2E2E2E;
+	border-radius: 20px;
+	box-shadow: 1px 1px 10px #2E2E2E;
+	margin: 0px auto;
+	width: 100%;
+	max-width: 400px;
+}
+
+.present h2
+{
+	background-image: url('img/black.png');
+	background-color: #2E2E2E;
+	color: white;
+	margin: 0px auto;
+	margin-bottom: 15px;
+}
+
+.present p
+{
+	padding: 10px;
+	text-align: justify;
+	padding: 5px 20px 5px 20px;
+}
+
+/** Section **/
+.my-button
+{
+	background-image: url('img/black.png');
+	background-color: #2E2E2E;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px 10px 20px;
+	border-radius: 5px;
+}
+
+section
+{
+	max-width: 1200px;
+	margin: 0px auto;
+	background-image: url('img/white.png');
+	background-color: #E8E8E8;
+	padding: 20px 20px 30px 20px;
+	height: 100%;
+}
+
+section ul li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+/** Footer **/
+footer
+{
+	background-image: url('img/black.png');
+	background-color: #2E2E2E;
+	max-width: 1240px;
+	color: white;
+	margin: 0px auto;
+	
+}
+
+footer div
+{
+	margin: 10px 10px 10px 10px;
+	display: inline-block;
+}
+
+footer a
+{
+	margin: 10px 10px 10px 10px;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	float: right;
+}
+/* Specific */
+.item-list-text
+{
+	padding: 10px;
+}
+
+.item-list-text p
+{
+	text-align: justify;
+}
+
+.item-list-text a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.item-list-image img
+{
+	border-radius: 25px;
+}
+
+.item-list-text ul li
+{
+	list-style-image: url('http://image005.flaticon.com/75/svg/70/70367.svg');
+	padding-bottom: 10px;
+}
+
+.item-list-text ul
+{
+	padding-bottom: 10px;
+}
+
+.general-section td
+{
+	text-align: center;
+	padding: 10px;
+}
+
+.general-section img
+{
+	width: 100%;
+	max-width: 400px;
+}
+
+.general-section p
+{
+	text-align: justify;
+}
+
+/** Style for printer**/
+@media print
+{
+    header, #image-header, footer, #rollover-box, my-button
+    {
+    	display: none;
+    }
+
+}
